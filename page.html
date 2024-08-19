@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div align="center">
+    <h2>Recommendation algorithm</h2>
+    <br>
+    <form action="{{ url_for('predict')}}" method="post">
+        <b>fan_cre</b><input type="text" name="fan_cre" required />
+        <br>
+        <b>plt_con</b><input type="text" name="plt_con" required />
+        <br>
+        <b>mul_plt</b><input type="text" name="mul_plt" required />
+        <br>
+        <b>plt_spo</b><input type="text" name="plt_spo" required />
+        <br>
+        <b>pk_sco</b><input type="text" name="pk_sco" required />
+        <br>
+        <b>maj_gen</b><input type="text" name="maj_gen" required />
+        <br>
+        <b>fi</b><input type="text" name="fi" required />
+        <br>
+        <b>ao</b><input type="text" name="ao" required />
+        <br>
+        <b>typ</b><input type="text" name="typ" required />
+        <br>
+        <b>multi</b><input type="text" name="multi" required />
+        <br>
+        <b>cre_lev</b><input type="text" name="cre_lev" required />
+        <br>
+        <b>tra_rate</b><input type="text" name="tra_rate" required />
+        <br>
+        <b>vio</b><input type="text" name="vio" required />
+        <br>
+        <b>lt_hol</b><input type="text" name="lt_hol" required />
+        <br>
+        <b>maj_inc</b><input type="text" name="maj_inc" required />
+        <br>
+        <b>avg_pv</b><input type="text" name="avg_pv" required />
+        <br>
+        <b>core_inf</b><input type="text" name="core_inf" required />
+        <br>
+        <button type=" submit ">Predict</button>
+    </form>
+    <br>
+    <br>
+    {{ status_category_display_area }}
+</div>
+</body>
+</html>
